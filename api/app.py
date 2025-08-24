@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from api.utils.exercisesdb_crud import search_exercises
+from .utils.exercisesdb_crud import search_exercises
 
 app = FastAPI()
 
