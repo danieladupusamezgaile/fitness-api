@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-base_url = os.getenv('BASE_URL')
+base_url = "https://exercises-db.vercel.app/api/v1/"
 
 async def search_exercises(params: dict):
     async with httpx.AsyncClient() as client:
