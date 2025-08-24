@@ -8,6 +8,6 @@ async def root():
     return {"message": "Hello, World!"}
 
 @app.get("/exercises/search")
-async def search(q: str, offset:int = 0, limit: int = 10, threshold: float = 0.3):
-    results = await search_exercises(params={"q": q, "offset": offset, "limit": limit, "threshold": threshold})
+async def search(q: str):
+    results = await search_exercises(params={"q": q})
     return results
